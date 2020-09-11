@@ -12,13 +12,6 @@ jobs:
       - checkout:
           path: ~/project
       - run:
-          name: Browsers versions
-          command: |
-            chromedriver --version
-            google-chrome --version
-            geckodriver --version
-            firefox --version
-      - run:
           name: Download CM Selenoid
           command: curl -s https://aerokube.com/cm/bash | bash && ./cm selenoid configure --browsers chrome --use-drivers
       - run:
