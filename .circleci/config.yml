@@ -10,7 +10,7 @@ jobs:
     working_directory: ~/project/testng
     steps:
       - checkout:
-          path: ~/project
+#          path: ~/project
       - run:
           name: Download CM Selenoid
           command: curl -s https://aerokube.com/cm/bash | bash && ./cm selenoid configure --browsers chrome --use-drivers
