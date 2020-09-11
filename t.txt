@@ -1,0 +1,29 @@
+Using build environment variables:
+  BASH_ENV=/tmp/.bash_env-5f5b4038c55d5c154397861c-0-build
+  CI=true
+  CIRCLECI=true
+  CIRCLE_BRANCH=master
+  CIRCLE_BUILD_NUM=2
+  CIRCLE_BUILD_URL=https://circleci.com/gh/andrii-lemdianov/circle-ci-delete/2
+  CIRCLE_COMPARE_URL=
+  CIRCLE_JOB=build
+  CIRCLE_NODE_INDEX=0
+  CIRCLE_NODE_TOTAL=1
+  CIRCLE_PREVIOUS_BUILD_NUM=1
+  CIRCLE_PROJECT_REPONAME=circle-ci-delete
+  CIRCLE_PROJECT_USERNAME=andrii-lemdianov
+  CIRCLE_REPOSITORY_URL=git@github.com:andrii-lemdianov/circle-ci-delete.git
+  CIRCLE_SHA1=a88ccae64e354fa7fd1b895add2d16a13f143098
+  CIRCLE_SHELL_ENV=/tmp/.bash_env-5f5b4038c55d5c154397861c-0-build
+  CIRCLE_STAGE=build
+  CIRCLE_USERNAME=andrii-lemdianov
+  CIRCLE_WORKFLOW_ID=1a27b66e-504f-4f57-920c-1d87cc738ff9
+  CIRCLE_WORKFLOW_JOB_ID=3d2aa306-c87f-4535-a711-dcadeb7305df
+  CIRCLE_WORKFLOW_UPSTREAM_JOB_IDS=
+  CIRCLE_WORKFLOW_WORKSPACE_ID=1a27b66e-504f-4f57-920c-1d87cc738ff9
+  CIRCLE_WORKING_DIRECTORY=~/project/testng
+
+Using environment variables from project settings and/or contexts:
+  CIRCLE_JOB=**REDACTED**
+
+The redacted variables listed above will be masked in run step output.

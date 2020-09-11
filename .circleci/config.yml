@@ -18,17 +18,17 @@ jobs:
           name: Run CM Selenoid
           command: /home/circleci/.aerokube/selenoid/selenoid_linux_amd64 -conf /home/circleci/.aerokube/selenoid/browsers.json && sleep 60
           background: true
-      - restore_cache:
-          keys:
-            - $CIRCLE_PROJECT_REPONAME-{{ checksum "pom.xml" }}
-            - $CIRCLE_PROJECT_REPONAME-
+#      - restore_cache:
+#          keys:
+#            - $CIRCLE_PROJECT_REPONAME-{{ checksum "pom.xml" }}
+#            - $CIRCLE_PROJECT_REPONAME-
 
       - run:
           name: Resolve Maven dependencies
           command: ./mvnw dependency:go-offline compile compiler:testCompile
       - run:
           name: Autotests
-          command: ./mvnw test -Dstaging=${STAGING:-alpha} -Dsurefire.suiteXmlFiles=${SUITE:-all}.xml
+          command: ./mvnw test
           when: always
       - run:
           name: Generate environment properties
